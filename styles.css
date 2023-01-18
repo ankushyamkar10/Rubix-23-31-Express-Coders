@@ -1,13 +1,18 @@
+ 
+ 
  #logo{
     font-family: AMS Aaditya Regular;
-    font-size: 35px;
-    margin-left: 20px;
+    font-size: 2rem;
+    margin-left: 1.8rem;
 
 } 
 
 nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
   }
   
   .nav-left {
@@ -20,20 +25,21 @@ nav {
 a{
     text-decoration: none;
     color: black;
+    
 }
 #home{
     margin-right: 50px;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 #about{
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 1.5rem;
     padding-right: 50px;
 }
 button {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1rem;
     padding: 1em 2.7em;
     font-weight: 500;
     background: #1F2937;
@@ -84,7 +90,7 @@ button {
   #join{
     
     margin: 10px 10px 10px 0;
-    font-size: 25px;
+    font-size: 1.5rem;
     padding: 0px 35px;
     
     
@@ -103,36 +109,55 @@ button {
   }
   #found{
     
-    font-size: 50px;
+    font-size: 2rem;
+    font-weight: bolder;
     margin: 0;
     padding: 30px;
     
 
   }
   #description{
-    padding-top: 50px;
-    padding-left:100px;
-
-    width: 500px;
-    height: 500px;
-    text-align: left;
-    font-size: 25px;
-  }
-  
-  #imgs{
-    height: 356px;
-    width: 569px;
-    float: right;
-    padding-top: 70px;
-    padding-left: 200px;
-    padding-right: 0px;
-
-
+    
+   padding-left: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 50%;
   }
   .shortdes{
     display: flex;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
 
   }
+  #imgs{
+    
+    margin-right: 2rem;
+
+  }
+  #imgs>img{
+    height: 20rem;
+    width: 30rem;
+  }
+
+  
+  /* @media only screen and (max-width: 1246px) {
+    #imgs{
+      height: 356px;
+      width: 569px;
+      float: right;
+      padding-top: 70px;
+      padding-left: 200px;
+      padding-right: 0px;
+      padding-bottom: 10vw;
+  
+  
+    }
+  
+  } */
+ 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
@@ -315,3 +340,126 @@ main {
       max-height: 20vh;
     }
   }
+  @media all and (max-width:600px) {
+    #description{
+      width: 80%;
+
+    }
+    #imgs{
+      margin-right: 0;
+      
+    }
+    
+  }
+
+  
+  /* @media only screen and (max-width: 600px) {
+    #logo {
+    font-size: 25px;
+    margin-left: 10px;
+    }
+    #after-curosal{
+      flex-wrap: wrap;
+    }
+    
+    nav {
+    flex-wrap: wrap;
+    }
+    
+    .nav-left, .nav-right {
+    display: block;
+    }
+    
+    #home, #about {
+    margin-right: 0;
+    padding-top: 10px;
+    font-size: 20px;
+    }
+    
+    button {
+    font-size: 14px;
+    padding: 0.5em 1.5em;
+    }
+    
+    #join {
+    margin: 5px 5px 5px 0;
+    font-size: 20px;
+    padding: 0px 25px;
+    }
+    
+    #found {
+    font-size: 35px;
+    padding: 20px;
+    }
+    
+    #description {
+    padding-top: 30px;
+    padding-left: 10px;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    }
+    
+    #imgs {
+    height: 200px;
+    width: 300px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 0px;
+    }
+    }
+    
+    @media only screen and (max-width: 400px) {
+    #logo {
+    font-size: 20px;
+    margin-left: 5px;
+    }
+    
+    nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    
+    .nav-left, .nav-right {
+    display: block;
+    }
+    
+    #home, #about {
+    margin-right: 0;
+    padding-top: 10px;
+    font-size: 15px;
+    }
+    
+    button {
+    font-size: 12px;
+    padding: 0.3em 1em;
+    }
+    
+    #join {
+    margin: 3px 3px 3px 0;
+    font-size: 15px;
+    padding: 0px 20px;
+    }
+    
+    #found {
+    font-size: 25px;
+    padding: 15px;
+    }
+    
+    #description {
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 200px;
+    height: 200px;
+    font-size: 10vh;
+    }
+    
+    #imgs {
+    height: 150px;
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 0px;
+    }
+    } */
+    
