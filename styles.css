@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  user-select: none;
+  /* user-select: none; */
 }
 #logo {
   font-family: "AMS Aaditya Regular";
@@ -28,7 +30,7 @@ nav {
 }
 a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
 }
 #home {
   margin-right: 50px;
@@ -113,7 +115,6 @@ body {
 #description {
   padding-top: 50px;
   padding-left: 100px;
-
   width: 500px;
   height: 500px;
   text-align: left;
@@ -131,7 +132,6 @@ body {
 .shortdes {
   display: flex;
 }
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   margin: 0;
@@ -180,6 +180,7 @@ body {
 .card {
   width: 12rem;
   height: 100%;
+  max-height: 348px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -312,4 +313,53 @@ main {
     max-width: 80vw;
     max-height: 20vh;
   }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.footer_element {
+  padding-top: 10vh;
+}
+.trademark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_element > p {
+  max-width: 15vw;
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+}
+footer > div > h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+.social_media {
+  padding: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.socials {
+  width: 3em;
+  margin: 0px 20px;
+}
+.data {
+  max-width: 30vw;
+  color: white;
+}
+.data > div {
+  padding: 10px 0px;
+  text-align: center;
 }
