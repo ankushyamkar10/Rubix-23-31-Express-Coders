@@ -1,0 +1,48 @@
+<head>
+
+    <script type="module" src="https://cdn.what3words.com/javascript-components@4.1.0-alpha.12/dist/what3words/what3words.esm.js"></script>
+    <script nomodule src="https://cdn.what3words.com/javascript-components@4.1.0-alpha.12/dist/what3words/what3words.js"></script>
+   
+   
+   <!--- Ensure the map is full screen --->
+   <style>
+     #map {
+       width: 30%;
+       height: 50vh;
+     }
+     html, body {
+         padding: 0px;
+       margin:50px;
+       height:30%;
+     }
+   </style>
+   <!--- Ensure the map is full screen --->
+   
+   </head>
+   
+   <body>
+     <what3words-map
+       id="w3w-map"
+       api_key="VUFAP861"
+       map_api_key="AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"
+       zoom="8"
+       selected_zoom="20"
+       lng="-0.114637"
+       lat="51.454843"
+       search_control_position="2"
+       map_type_control
+       zoom_control
+       fullscreen_control
+       fullscreen_control_position="3"
+       current_location_control_position="9"
+       disable_default_ui
+       map_type_id="satellite"
+       words="plank.jousting.restore">
+       <div slot="map" id="map"></div>
+       <div slot="search-control">
+         <what3words-autosuggest>
+           <input type="text">
+         </what3words-autosuggest>
+       </div>
+     </what3words-map>
+   </body>
