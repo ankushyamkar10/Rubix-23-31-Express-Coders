@@ -1,61 +1,172 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Annapoorna</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    
     <!-- <nav id="navbar">
         <div ">AnnapaUNaQ</div>
         <div >Home</div>
         <div >About us</div>
         <div><button >Join Us</button></div>
     </nav> -->
+    <!-- Nav Bar -->
     <nav>
-      <div class="nav-left">
-        <a href="#" id="logo">AnnapaUNaQ</a>
+        <div class="nav-left">
+          <a href="#" id="logo">AnnapaUNaQ</a>
+        </div>
+        <div class="nav-right">
+          <a href="#" id="home">Home</a>
+          <a href="#" id="about">About Us</a>
+          <button id="join">
+            <span class="transition"></span>
+            <span class="gradient"></span>
+            <span class="label">Join Us</span>
+          </button>
+
+        </div>
+      </nav>
+      <!-- Photo Curosal -->
+      <div class="image_container">
+        <!-- <button onclick="goPrev()">&LeftArrow;</button> -->
+        <main>
+          <img
+            src="https://picsum.photos/id/237/1000/500"
+            class="slide"
+            alt="img"
+          />
+          <img
+            src="https://picsum.photos/id/238/1000/500"
+            class="slide"
+            alt="img"
+          />
+          <img
+            src="https://picsum.photos/id/239/1000/500"
+            class="slide"
+            alt="img"
+          />
+          <img
+            src="https://picsum.photos/id/240/1000/500"
+            class="slide"
+            alt="img"
+          />
+        </main>
+        <!-- <button onclick="goNext()">&RightArrow;</button> -->
       </div>
-      <div class="nav-right">
-        <a href="#" id="home">Home</a>
-        <a href="#" id="about">About Us</a>
-        <button id="join">
-          <span class="transition"></span>
-          <span class="gradient"></span>
-          <span class="label">Join Us</span>
-        </button>
-      </div>
-    </nav>
-    <!-- <div id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ktw4wp69j6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div> -->
-    <div class="image_container">
-      <!-- <button onclick="goPrev()">&LeftArrow;</button> -->
-      <main>
-        <img
-          src="https://picsum.photos/id/237/1000/500"
-          class="slide"
-          alt="img"
-        />
-        <img
-          src="https://picsum.photos/id/238/1000/500"
-          class="slide"
-          alt="img"
-        />
-        <img
-          src="https://picsum.photos/id/239/1000/500"
-          class="slide"
-          alt="img"
-        />
-        <img
-          src="https://picsum.photos/id/240/1000/500"
-          class="slide"
-          alt="img"
-        />
-      </main>
-      <!-- <button onclick="goNext()">&RightArrow;</button> -->
+  
+
+
+
+    <!-- Short Description -->
+     <div id="after-curosal">
+        <p id="found">Who are we?</p>
+        <div class="shortdes"><p id="description">We are an NGO committed to reducing food waste and its environmental impact. From crop storage to household preparation, we strive to find solutions to the excessive wastage of food. Join us in creating a sustainable future by addressing this ethical and environmental issue</p>
+            <img src="images.jpg" alt="food" id="imgs" >
     </div>
-  </body>
-  <script src="script.js"></script>
+     </div>
+
+
+     <!-- Cards -->
+     <section id="Cards-Section">
+        <div id="Services">
+          <div class="Service-desc">
+            <h5 class="Main-Para f-1-25 text-centre">
+              Our works are designed to provide essential food support to
+              underserved areas in the form of food or packaged food products
+              depending on the need.
+            </h5>
+            <h5 class="f-1-25 text-centre">
+              Our goal is to ensure, Feed people not landfills.
+            </h5>
+          </div>
+  
+          <div class="Cards">
+            <div class="card">
+              <div class="icon"><i class="ri-smartphone-fill"></i></div>
+              <h5 class="f-1-25 text-centre">Contact Us</h5>
+  
+              <p class="mdesc text-centre">
+                Donors with surplus food/resources can reach us at
+                <br /><a href="tel:9087790877">+91 9087790877</a>
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon"><i class="ri-shield-check-fill"></i></div>
+              <h5 class="f-1-25 text-centre">Quality Check</h5>
+  
+              <p class="mdesc text-centre">
+                Excess Food will be checked based on our Food Safety and Standard
+                Guidelines
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon"><i class="ri-map-pin-2-fill"></i></div>
+              <h5 class="f-1-25 text-centre">Pick Up</h5>
+  
+              <p class="mdesc text-centre">
+                We pickup excess food from locations of an organisation or an
+                individual
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon"><i class="ri-truck-fill"></i></div>
+              <h5 class="f-1-25 text-centre">Delivery</h5>
+  
+              <p class="mdesc text-centre">
+                Excess food is distributed to needy people with love and
+                prosperty.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="video">
+        
+        
+        </div>
+        <div class="video-content">
+          <div  class='media-centre'>
+          <h5 class="f-1-25">
+            We are solving food waste & hunger across 15+ cities in India!
+          </h5>
+      </div>
+      <div class='media-centre'>
+          <h1>19 Million Happy Beneficiaries!</h1>
+      </div>
+      <div class='media-centre'>
+          <p>
+            Every day No Food Waste Team and Volunteers serve 5000+ needy people
+            on an average!
+          </p>
+      </div>
+          <div class='video-buttons'>
+          <button class="video-btn btn-1">Retailer</button>
+          <button class="video-btn">Be A Donor</button>
+  
+          
+        </div>
+      </div><div class="video-frame">
+          <div><iframe
+            width="430"
+            height="315"
+            src="https://www.youtube.com/embed/ly36kn0ug4k"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe></div>
+      </section>
+    
+     
+</body>
+<script src="script.js"></script>
 </html>
