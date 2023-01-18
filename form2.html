@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h2>Ready to be Retailer!!</h2>
+<div class="card-bunch">
+    <div class="card">
+        <div class="container">
+        
+    
+            <h3>Add new Product</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">Type of Product</label><br>
+                    <!-- <input type="" id="text" placeholder="Enter Product Name..." /> -->
+                    <select id="mySelect" onchange="storeValue()">
+                        <option value="option1" id="bakery">Bakery</option>
+                        <option value="option2" id="bakery" >Biscuits</option>
+                        <option value="option3" id="bakery">Cereal</option>
+                        <option value="option4" id="bakery">Chocolates</option>
+                        <option value="option5" id="bakery">Dairy</option>
+                        <option value="option6" id="bakery">Fresh Meat</option>
+                        <option value="option7" id="bakery">Frozen Meat</option>
+                        <option value="option8" id="bakery">Fruits and Vegetables</option>
+                        <option value="option9" id="bakery">Milk</option>
+                        <option value="option10">Packaged Snacks</option>
+                        <option value="option11">Poultry</option>
+                        <option value="option12">Rice</option>
+                        <option value="option13">Spice</option>
+                        <option value="option14">Tea and Coffee</option>
+                        <option value="option15">Tetra Pack</option>
+                        <option value="option16">Wheat</option>
+    
+                      </select>
+                </div>
+                <div class="form-control">
+                    <label for="amount"
+                    >Amount
+                    </label>
+                <input type="number" id="amount" placeholder="Enter amount..." />
+                </div>
+                <div class="form-control">
+                    <label for="quantity"
+                    >Quantity<br />
+                    </label>
+                <input type="number" id="quantity" placeholder="Enter Quantity" />
+                </div>
+                <div class="form-control">
+                    <label for="Bestbeforeday"
+                              >Best Before.. in Days</label>
+                <input type="number" id="Bestbeforeday" placeholder="Enter amount..." />
+                </div>
+                <button class="btn">Add product</button>
+            </form>
+            
+        </div>
+    </div>
+    <div class="card">
+        <h4>Total Amount</h4>
+            <h1 id="balance">$0.00</h1>
+    
+           
+    
+            <h3>List Of Your Products</h3>
+            <ul id="list" class="list">
+    
+            </ul>
+    </div>
+       
+</div>
+
+
+    
+    <script src="script2.js"></script>
+</body>
+</html>
