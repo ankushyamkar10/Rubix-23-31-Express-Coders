@@ -1,50 +1,59 @@
- #logo{
-    font-family: AMS Aaditya Regular;
-    font-size: 35px;
-    margin-left: 20px;
-
-} 
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+#logo {
+  font-family: "AMS Aaditya Regular";
+  font-size: 35px;
+  margin-left: 20px;
+}
 
 nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav-left {
-    display: flex;
-  }
-  
-  .nav-right {
-    display: flex;
-  }
-a{
-    text-decoration: none;
-    color: black;
+  display: flex;
+  justify-content: space-between;
 }
-#home{
-    margin-right: 50px;
-    padding-top: 20px;
-    font-size: 30px;
+
+.nav-left {
+  display: flex;
 }
-#about{
-    padding-top: 20px;
-    font-size: 30px;
-    padding-right: 50px;
+
+.nav-right {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#home {
+  margin-right: 50px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+#about {
+  padding-top: 20px;
+  font-size: 30px;
+  padding-right: 50px;
 }
 button {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 17px;
-    padding: 1em 2.7em;
-    font-weight: 500;
-    background: #1F2937;
-    color: white;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    border-radius: 150px;
-   }
-   
-   /* .gradient {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #1f2937;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 150px;
+}
+
+/* .gradient {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -81,22 +90,47 @@ button {
    button:active {
     transform: scale(0.97);
    } */
-  #join{
-    
-    margin: 10px 10px 10px 0;
-    font-size: 25px;
-    padding: 0px 35px;
-    
-    
-
-
+#join {
+  margin: 10px 10px 10px 0;
+  font-size: 25px;
+  padding: 0px 35px;
+}
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0px;
+}
+nav {
+  background-color: rgb(248, 192, 52);
+}
+main {
+  width: 95vw;
+  height: 90vh;
+  margin: auto;
+  /* margin-top: 5vh; */
+  box-shadow: 0px 0px 3px grey;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1.1em;
+}
+.btns button {
+  font-size: larger;
+  text-align: center;
+  padding: 5px 5px;
+}
+@media all and (max-width: 1050px) {
+  main {
+    max-width: 80vw;
+    max-height: 20vh;
   }
-  body{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  }
-  nav{
-    background-color: rgb(248, 192, 52);
-  }
-  body{
-    margin: 0px;
-  }
+}
