@@ -19,6 +19,11 @@
 nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* transition: display 1s ease-in-out; */
 }
 
 .nav-left {
@@ -362,4 +367,10 @@ footer > div > h2 {
 .data > div {
   padding: 10px 0px;
   text-align: center;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgba(248, 192, 52, 0.95);
 }
