@@ -24,3 +24,16 @@ const slideImage = () => {
 
 // #FIXME time
 setInterval(goNext, 5000);
+
+const about = document.querySelector("#found");
+document.querySelector("#about").addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("hello");
+  about.scrollIntoView({ behavior: "smooth" });
+});
+
+const joinUs = document.querySelector("#video");
+document.querySelector("#join").addEventListener("click", function (e) {
+  e.preventDefault();
+  joinUs.scrollIntoView({ behavior: "smooth" });
+});

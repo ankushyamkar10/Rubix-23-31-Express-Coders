@@ -321,7 +321,7 @@ main {
 footer {
   background-color: #1f2937;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 100px;
 }
 .footer_element {
