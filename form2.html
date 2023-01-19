@@ -1,97 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Expense Tracker</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Retailer Login</title>
+  </head>
+  <body>
     <nav>
-        <div class="nav-left">
-          <a href="#" id="logo">AnnapaUNaQ</a>
-        </div>
-        <div class="nav-right">
-          <a href="index.html" id="home">Home</a>
-          <a href="index.html" id="about">About Us</a>
-          <!-- <button id="join">
+      <div class="nav-left">
+        <a href="#" id="logo">AnnapaUNaQ</a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html" id="home">Home</a>
+        <a href="index.html#whoarewe" id="about">About Us</a>
+        <!-- <button id="join">
             <span class="transition"></span>
             <span class="gradient"></span>
             <span class="label">Join Us</span>
           </button> -->
-
-        </div>
-      </nav>
-    <h2>Ready to be Retailer!!</h2>
-<div class="card-bunch">
-    <div class="card">
+      </div>
+    </nav>
+    <h2>Ready to be a Retailer!</h2>
+    <div class="card-bunch">
+      <div class="card">
         <div class="container">
-        
-    
-            <h3>Add new Product</h3>
-            <form id="form">
-                <div class="form-control">
-                    <label for="text">Type of Product</label><br>
-                    <!-- <input type="" id="text" placeholder="Enter Product Name..." /> -->
-                    <select id="mySelect" onchange="storeValue()">
-                        <option value="Select">Select</option>
-                        <option value="Bakery" id="Bakery">Bakery</option>
-                        <option value="Biscuits" id="Biscuits" >Biscuits</option>
-                        <option value="Cereal" id="Cereal">Cereal</option>
-                        <option value="Chocolates" id="Chocolates">Chocolates</option>
-                        <option value="Dairy" id="Dairy">Dairy</option>
-                        <option value="Fresh Meat" id="Fresh Meat">Fresh Meat</option>
-                        <option value="Frozen Meat" id="Frozen Meat">Frozen Meat</option>
-                        <option value="Fruits and Vegetables" id="Fruits and Vegetables">Fruits and Vegetables</option>
-                        <option value="Milk" id="Milk">Milk</option>
-                        <option value="Packaged Snacks" id="Packaged Snacks">Packaged Snacks</option>
-                        <option value="Poultry" id="Poultry">Poultry</option>
-                        <option value="Rice" id="Rice">Rice</option>
-                        <option value="Spice" id="Spice">Spice</option>
-                        <option value="Tea and Coffee" id="Tea and Coffee">Tea and Coffee</option>
-                        <option value="Tetra Pack" id="Tetra Pack">Tetra Pack</option>
-                        <option value="Wheat" id="Wheat">Wheat</option>
-    
-                      </select>
-                </div>
-                <div class="form-control">
-                    <label for="amount"
-                    >Amount
-                    </label>
-                <input type="number" id="amount" onchange="getAmount()" min="1" placeholder="Enter amount..." />
-                </div>
-                <div class="form-control">
-                    <label for="quantity"
-                    >Quantity<br />
-                    </label>
-                <input type="number" id="quantity"onchange="getQuantity()" min="1" placeholder="Enter Quantity" />
-                </div>
-                <div class="form-control">
-                    <label for="bestbefore"
-                              >Best Before.. in Days</label>
-                <input type="number" id="bestbefore" onchange="getbestbefore()" min="5" placeholder="Enter amount..." />
-                </div>
-                <button id="btn" >Add product</button>
-            </form>
-            
+          <h3>Add new Product</h3>
+          <form id="form">
+            <div class="form-control">
+              <label for="text">Type of Product</label><br />
+              <!-- <input type="" id="text" placeholder="Enter Product Name..." /> -->
+              <select id="mySelect" onchange="storeValue()">
+                <option value="Select">Select</option>
+                <option value="Bakery" id="Bakery">Bakery</option>
+                <option value="Biscuits" id="Biscuits">Biscuits</option>
+                <option value="Cereal" id="Cereal">Cereal</option>
+                <option value="Chocolates" id="Chocolates">Chocolates</option>
+                <option value="Dairy" id="Dairy">Dairy</option>
+                <option value="Fresh Meat" id="Fresh Meat">Fresh Meat</option>
+                <option value="Frozen Meat" id="Frozen Meat">
+                  Frozen Meat
+                </option>
+                <option
+                  value="Fruits and Vegetables"
+                  id="Fruits and Vegetables"
+                >
+                  Fruits and Vegetables
+                </option>
+                <option value="Milk" id="Milk">Milk</option>
+                <option value="Packaged Snacks" id="Packaged Snacks">
+                  Packaged Snacks
+                </option>
+                <option value="Poultry" id="Poultry">Poultry</option>
+                <option value="Rice" id="Rice">Rice</option>
+                <option value="Spice" id="Spice">Spice</option>
+                <option value="Tea and Coffee" id="Tea and Coffee">
+                  Tea and Coffee
+                </option>
+                <option value="Tetra Pack" id="Tetra Pack">Tetra Pack</option>
+                <option value="Wheat" id="Wheat">Wheat</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="amount">MRP</label>
+              <input
+                type="number"
+                id="amount"
+                onchange="getAmount()"
+                min="1"
+                placeholder="Enter amount..."
+              />
+            </div>
+            <div class="form-control">
+              <label for="quantity">Quantity<br /> </label>
+              <input
+                type="number"
+                id="quantity"
+                onchange="getQuantity()"
+                min="1"
+                placeholder="Enter Quantity"
+              />
+            </div>
+            <div class="form-control">
+              <label for="bestbefore">Best Before.. in Days</label>
+              <input
+                type="number"
+                id="bestbefore"
+                onchange="getbestbefore()"
+                min="5"
+                placeholder="Enter amount..."
+              />
+            </div>
+            <button id="btn">Add product</button>
+          </form>
         </div>
-    </div>
-    <div class="card">
+      </div>
+      <div class="card">
         <h4>Total Amount</h4>
-            <h1 id="totalamount">$0.00</h1>
-    
-           
-    
-            <h3>List Of Your Products</h3>
-            <ul id="list" class="list">
-    
-            </ul>
+        <h1 id="totalamount">$0.00</h1>
+
+        <h3>List Of Your Products</h3>
+        <ul id="list" class="list"></ul>
+      </div>
     </div>
-       
-</div>
 
-
-    
     <script src="script2.js"></script>
-</body>
+  </body>
 </html>

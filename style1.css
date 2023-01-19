@@ -109,6 +109,7 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-content: space-around;
+  padding: 35px 0px;
 }
 #addgoods {
   margin-left: 20px;
