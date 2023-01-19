@@ -1,4 +1,7 @@
 /* Styling for nav */
+*{
+  font-family: Poppins,sans-serif;
+}
 #logo {
   font-family: AMS Aaditya Regular;
   font-size: 2rem;
@@ -401,3 +404,19 @@ footer > div > h2 {
    button:active {
     transform: scale(0.97);
    } */
+   /* input[type='radio'] {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .r-btns {
+    display: flex;
+    align-items: center;
+  }
+  .r-btns label {
+    margin-left: 10px;
+  }
+  
+  .login-btn {
+    margin-top: 1rem !important;
+  } */
