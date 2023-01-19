@@ -1,9 +1,9 @@
+/* Styling for nav */
 #logo {
   font-family: AMS Aaditya Regular;
   font-size: 2rem;
   margin-left: 1.8rem;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -13,34 +13,28 @@ nav {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   /* transition: display 1s ease-in-out; */
 }
-
 .nav-left {
   display: flex;
 }
-
-.nav-right {
-  display: flex;
-}
-a {
-  text-decoration: none;
-  /* color: black; */
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.nav-left {
-  display: flex;
-}
-
 .nav-right {
   display: flex;
 }
 a {
   text-decoration: none;
   color: black;
+  /* color: white; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+.nav-left {
+  display: flex;
+}
+.nav-right {
+  display: flex;
+}
+
 #home {
   margin-right: 50px;
   padding-top: 20px;
@@ -63,44 +57,6 @@ button {
   overflow: hidden;
   border-radius: 150px;
 }
-
-/* .gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 0.6em;
-    margin-top: -0.25em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
-   }
-   
-   .label {
-    position: relative;
-    top: -1px;
-   }
-   
-   .transition {
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    transition-duration: 500ms;
-    background-color: rgba(16, 185, 129, 0.6);
-    border-radius: 9999px;
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-   }
-   
-   button:hover .transition {
-    width: 14em;
-    height: 14em;
-   }
-   
-   button:active {
-    transform: scale(0.97);
-   } */
 #join {
   margin: 10px 10px 10px 0;
   font-size: 1.5rem;
@@ -116,6 +72,9 @@ nav {
 body {
   margin: 0px;
 }
+
+
+/* short description */
 #found {
   font-size: 2rem;
   font-weight: bolder;
@@ -157,6 +116,11 @@ body {
   
   } */
 
+ .video-a{
+    color: white;
+    display: block;
+  
+  }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
@@ -234,9 +198,7 @@ body {
   font-weight: 100;
 }
 
-a {
-  text-decoration: none;
-}
+
 
 /* utils */
 .text-centre {
@@ -348,116 +310,7 @@ main {
     margin-right: 0;
   }
 }
-
-/* @media only screen and (max-width: 600px) {
-    #logo {
-    font-size: 25px;
-    margin-left: 10px;
-    }
-    #after-curosal{
-      flex-wrap: wrap;
-    }
-    
-    nav {
-    flex-wrap: wrap;
-    }
-    
-    .nav-left, .nav-right {
-    display: block;
-    }
-    
-    #home, #about {
-    margin-right: 0;
-    padding-top: 10px;
-    font-size: 20px;
-    }
-    
-    button {
-    font-size: 14px;
-    padding: 0.5em 1.5em;
-    }
-    
-    #join {
-    margin: 5px 5px 5px 0;
-    font-size: 20px;
-    padding: 0px 25px;
-    }
-    
-    #found {
-    font-size: 35px;
-    padding: 20px;
-    }
-    
-    #description {
-    padding-top: 30px;
-    padding-left: 10px;
-    width: 300px;
-    height: 300px;
-    font-size: 20px;
-    }
-    
-    #imgs {
-    height: 200px;
-    width: 300px;
-    padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 0px;
-    }
-    }
-    
-    @media only screen and (max-width: 400px) {
-    #logo {
-    font-size: 20px;
-    margin-left: 5px;
-    }
-    
-    nav {
-    flex-wrap: wrap;
-    flex-direction: row;
-    }
-    
-    .nav-left, .nav-right {
-    display: block;
-    }
-    
-    #home, #about {
-    margin-right: 0;
-    padding-top: 10px;
-    font-size: 15px;
-    }
-    
-    button {
-    font-size: 12px;
-    padding: 0.3em 1em;
-    }
-    
-    #join {
-    margin: 3px 3px 3px 0;
-    font-size: 15px;
-    padding: 0px 20px;
-    }
-    
-    #found {
-    font-size: 25px;
-    padding: 15px;
-    }
-    
-    #description {
-    padding-top: 20px;
-    padding-left: 30px;
-    width: 200px;
-    height: 200px;
-    font-size: 10vh;
-    }
-    
-    #imgs {
-    height: 150px;
-    width: 200px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 0px;
-    }
-    } */
+/* STYLING FOR FOOTER */
 
 footer {
   background-color: #1f2937;
@@ -510,3 +363,41 @@ footer > div > h2 {
   left: 0;
   background-color: rgba(248, 192, 52, 0.95);
 }
+
+/* .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+   }
+   
+   .label {
+    position: relative;
+    top: -1px;
+   }
+   
+   .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: rgba(16, 185, 129, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   }
+   
+   button:hover .transition {
+    width: 14em;
+    height: 14em;
+   }
+   
+   button:active {
+    transform: scale(0.97);
+   } */
