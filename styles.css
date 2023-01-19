@@ -351,6 +351,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 100px;
+  width: 100%;
 }
 .footer_element {
   padding-top: 10vh;
