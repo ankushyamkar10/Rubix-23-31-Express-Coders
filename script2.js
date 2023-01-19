@@ -1,101 +1,90 @@
-
-var arrayOfGoods = [];
+// var arrayOfGoods = [];
 var typeOfFood = '';
 var quantity = 0;
 var amount = 0;
 var bestbefore = 0;
 var val = {};
-var totalamount=0;
+var totalamount = 0;
+var select = '';
 
-const localStorageTransactions = JSON.parse(
-  localStorage.getItem('transactions')
-);
+const localStorageArrays = JSON.parse(localStorage.getItem('arrayOfGoods'));
 
-let transactions = localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
-
-
+let arrayOfGoods =
+  localStorage.getItem('arrayOfGoods') !== null ? localStorageArrays : [];
 
 function storeValue() {
-  var select = document.getElementById('mySelect');
+  select = document.getElementById('mySelect');
   typeOfFood = select.options[select.selectedIndex].value;
-  console.log(typeOfFood);
+  //   console.log(typeOfFood);
 }
 
 function getQuantity() {
   quantity = document.getElementById('quantity').value;
-  console.log(quantity);
+  //   console.log(quantity);
 }
 function getAmount() {
-    amount = document.getElementById('amount').value;
-    console.log(amount);
-  }
+  amount = document.getElementById('amount').value;
+  //   console.log(amount);
+}
 function getbestbefore() {
-    bestbefore = document.getElementById('bestbefore').value;
-    console.log(bestbefore);
-  }
+  bestbefore = document.getElementById('bestbefore').value;
+  //   console.log(bestbefore);
+}
 
 function getMeasure() {
   if (
     typeOfFood === 'Bakery' ||
     typeOfFood === 'Biscuits' ||
     typeOfFood === 'Chocolates' ||
-    typeOfFood === 'Packaged Snacks'||
+    typeOfFood === 'Packaged Snacks' ||
     typeOfFood === 'Tetra Pack'
-    
-
   )
     return 'Pieces';
-    else if(
-        typeOfFood=== 'Dairy'||
-        typeOfFood==='Milk'
-    )
-    return 'litres';
+  else if (typeOfFood === 'Dairy' || typeOfFood === 'Milk') return 'litres';
   else return 'kg';
 }
 
 document.getElementById('btn').addEventListener('click', function (event) {
- 
- if (typeOfFood!==''  && typeOfFood!=='Select' && quantity>0 && amount>0 && bestbefore>0){
-   
-    val={typeOfFood,amount,quantity,bestbefore};
+  if (
+    typeOfFood !== '' &&
+    typeOfFood !== 'Select' &&
+    quantity > 0 &&
+    amount > 0 &&
+    bestbefore > 0
+  ) {
+    val = { typeOfFood, amount, quantity, bestbefore };
     addGoodsDOM();
     setTotalAmount(val);
     arrayOfGoods.push(val);
-    transactions.push(val);
-
-    localStorage.setItem("ṭransactions", JSON.stringify(transactions));
-    
-    
- }
- else{
-    alert("Enter valid values please.")
- }
-    console.log(transactions);
-    
-    amount=0;
-
-    
+    updateLocalStorage();
+  } else {
+    alert('Enter valid values please.');
+  }
+//   console.log(arrayOfGoods);
+  typeOfFood = '';
+  quantity = 0;
+  amount = 0;
+  bestbefore = 0;
   event.preventDefault();
 });
 
-  function addGoodsDOM() {
-      const item = document.createElement('li');
-  
-      item.innerHTML = `
+function addGoodsDOM() {
+  const item = document.createElement('li');
+
+  item.innerHTML = `
       
          <span> ${val.typeOfFood} "-" ${val.quantity}  "x"   ${val.amount}</span>
       `;
-  
-      list.appendChild(item);
-  }
-  function setTotalAmount(val){
-    totalamount=Number(totalamount)  +Number(val.amount)*Number(val.quantity);
-    document.getElementById("totalamount"
-    ).innerText=totalamount;
-    console.log(totalamount);
-    
-  }
-  // document.getElementById('btn').addEventListener('click', function (event) { 
-  //   localStorage.setItem("arrayOfGoods", JSON.stringify(arrayOfGoods));
-  //   console.log(arrayOfGoods);
-  // })
+
+  list.appendChild(item);
+}
+
+function updateLocalStorage() {
+  localStorage.setItem('arrayOfGoods', JSON.stringify(arrayOfGoods));
+}
+
+function setTotalAmount(val) {
+  totalamount = Number(totalamount) + Number(val.amount) * Number(val.quantity);
+  document.getElementById('totalamount').innerText = totalamount;
+  console.log(totalamount);
+}

@@ -36,6 +36,12 @@ nav {
 .nav-right {
   display: flex;
 }
+input[type='text']:hover,
+input[type='number']:hover,
+input[type='tel']:hover ,
+input[type='address']:hover{
+  border: 1px solid black;
+}
 a {
   text-decoration: none;
   color: black;

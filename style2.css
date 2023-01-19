@@ -13,6 +13,12 @@
   /* margin-top: 8rem; */
 
 }
+input[type='text']:hover,
+input[type='number']:hover,
+input[type='tel']:hover ,
+input[type='address']:hover{
+  border: 1px solid black;
+}
 
 nav {
   display: flex;
