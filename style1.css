@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 #logo {
   font-family: AMS Aaditya Regular;
@@ -65,17 +65,16 @@ button {
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: whitesmoke;
-}
-nav {
-  background-color:  rgb(248, 192, 52);
-}
-body {
+  background-color: beige;
   margin: 0px;
 }
-
-/* ****************************************************** */
-
+body > h2 {
+  margin-top: 3rem;
+  text-decoration: underline;
+}
+nav {
+  background-color: rgb(248, 192, 52);
+}
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -91,7 +90,7 @@ body {
   padding: 10px;
   width: 100%;
 }
-input[type='checkbox'] {
+input[type="checkbox"] {
   width: 20px;
   height: 20px;
   margin-right: 0.8rem;
@@ -104,21 +103,20 @@ input[type='checkbox'] {
   display: flex;
   align-items: center;
 }
-
 .card-bunch {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
   justify-content: center;
   align-content: space-around;
-  padding-bottom: 5rem;
+  padding: 35px 0px;
 }
 #addgoods {
   margin-left: 20px;
 }
 .card {
   width: 27rem;
-  height: 30rem;
+  height: 35rem;
   background: #f7f7f7;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
@@ -126,16 +124,14 @@ input[type='checkbox'] {
   padding: 1rem;
 }
 body {
-  background-color:beige;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
 .container {
   margin: 30px auto;
   width: 350px;
@@ -194,8 +190,8 @@ label {
   margin: 10px 0;
 }
 
-input[type='text'],
-input[type='number'] {
+input[type="text"],
+input[type="number"] {
   border: 1px solid #dedede;
   border-radius: 2px;
   display: block;
@@ -204,7 +200,7 @@ input[type='number'] {
   width: 100%;
 }
 
-#btn {
+.btn {
   cursor: pointer;
   background-color: #9c88ff;
   box-shadow: var(--box-shadow);
@@ -217,7 +213,7 @@ input[type='number'] {
   width: 100%;
 }
 
-#btn:focus,
+.btn:focus,
 .delete-btn:focus {
   outline: 0;
 }
@@ -226,8 +222,6 @@ input[type='number'] {
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .list li {
@@ -239,7 +233,14 @@ input[type='number'] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
-  margin-right: 10px;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
 }
 
 .delete-btn {
@@ -310,57 +311,58 @@ input[type='number'] {
 .show {
   display: block;
 }
-/* STYLING FOR FOOTER */
+
+#map {
+  height: 400px;
+  width: 400px;
+}
+
+h2 {
+  color: #308d46;
+}
 footer {
-    background-color: #1f2937;
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 100px;
-    width: 100%;
-    
-  }
-  .footer_element {
-    padding-top: 10vh;
-  }
-  .trademark {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer_element > p {
-    max-width: 15vw;
-    padding-top: 1em;
-    text-align: center;
-    color: white;
-  }
-  footer > div > h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 0;
-    color: white;
-  }
-  .social_media {
-    padding: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .socials {
-    width: 3em;
-    margin: 0px 20px;
-  }
-  .data {
-    max-width: 30vw;
-    color: white;
-  }
-  .data > div {
-    padding: 10px 0px;
-    text-align: center;
-  }
-  .sticky {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: rgba(248, 192, 52, 0.95);
-  }
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.footer_element {
+  padding-top: 10vh;
+}
+.trademark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_element > p {
+  max-width: 15vw;
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+}
+footer > div > h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+.social_media {
+  padding: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.socials {
+  width: 3em;
+  margin: 0px 20px;
+}
+.data {
+  max-width: 30vw;
+  color: white;
+}
+.data > div {
+  padding: 10px 0px;
+  text-align: center;
+}
