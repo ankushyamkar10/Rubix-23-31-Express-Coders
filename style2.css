@@ -2,9 +2,18 @@
 
 #logo {
   font-family: AMS Aaditya Regular;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-left: 1.8rem;
 }
+
+#d{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+  /* margin-top: 8rem; */
+
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -39,14 +48,17 @@ a {
 #home {
   margin-right: 50px;
   padding-top: 20px;
-  font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
+
 #about {
   padding-top: 20px;
-  font-size: 1.5rem;
   padding-right: 50px;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
-button {
+/* button {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1rem;
   padding: 1em 2.7em;
@@ -57,7 +69,46 @@ button {
   position: relative;
   overflow: hidden;
   border-radius: 150px;
-}
+} */
+#btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3d405b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+ 
+ #btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ #btn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ #btn:hover span {
+  padding-right: 15px;
+ }
+ 
+ #btn:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
 #join {
   margin: 10px 10px 10px 0;
   font-size: 1.5rem;
@@ -69,6 +120,7 @@ body {
 }
 h2 {
   margin-top: 9vh;
+  font-size: 2.5rem;
 }
 nav {
   background-color: rgb(248, 192, 52);
@@ -97,7 +149,7 @@ body {
 } */
 .card {
   width: 27rem;
-  height: 35rem;
+  height: 37rem;
   background: #f7f7f7;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
@@ -112,7 +164,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -191,7 +243,7 @@ input[type="number"] {
   width: 100%;
 }
 
-#btn {
+/* #btn {
   cursor: pointer;
   background-color: #9c88ff;
   box-shadow: var(--box-shadow);
@@ -207,7 +259,7 @@ input[type="number"] {
 .btn:focus,
 .delete-btn:focus {
   outline: 0;
-}
+} */
 
 .list {
   list-style: none;

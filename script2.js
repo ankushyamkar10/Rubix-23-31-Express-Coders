@@ -1,3 +1,4 @@
+
 var arrayOfGoods = [];
 var typeOfFood = '';
 var quantity = 0;
@@ -5,6 +6,13 @@ var amount = 0;
 var bestbefore = 0;
 var val = {};
 var totalamount=0;
+
+const localStorageTransactions = JSON.parse(
+  localStorage.getItem('transactions')
+);
+
+let transactions = localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
+
 
 
 function storeValue() {
@@ -46,19 +54,23 @@ function getMeasure() {
 }
 
 document.getElementById('btn').addEventListener('click', function (event) {
- var defval = Math.floor(Math.random()*100);
+ 
  if (typeOfFood!==''  && typeOfFood!=='Select' && quantity>0 && amount>0 && bestbefore>0){
    
     val={typeOfFood,amount,quantity,bestbefore};
     addGoodsDOM();
     setTotalAmount(val);
     arrayOfGoods.push(val);
-    console.log(arrayOfGoods);
+    transactions.push(val);
+
+    localStorage.setItem("ṭransactions", JSON.stringify(transactions));
+    
+    
  }
  else{
     alert("Enter valid values please.")
  }
-    console.log(arrayOfGoods);
+    console.log(transactions);
     
     amount=0;
 
@@ -83,4 +95,7 @@ document.getElementById('btn').addEventListener('click', function (event) {
     console.log(totalamount);
     
   }
-  
+  // document.getElementById('btn').addEventListener('click', function (event) { 
+  //   localStorage.setItem("arrayOfGoods", JSON.stringify(arrayOfGoods));
+  //   console.log(arrayOfGoods);
+  // })
