@@ -61,10 +61,8 @@ document.getElementById('btn').addEventListener('click', function (event) {
     alert('Enter valid values please.');
   }
 //   console.log(arrayOfGoods);
-  typeOfFood = '';
-  quantity = 0;
-  amount = 0;
-  bestbefore = 0;
+document.getElementById('form').reset();
+
   event.preventDefault();
 });
 

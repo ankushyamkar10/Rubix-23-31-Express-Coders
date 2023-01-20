@@ -46,6 +46,8 @@ document.getElementById('btn').addEventListener('click', function (event) {
     } else alert('please check the checkbox if made less than 18 hrs');
   } else alert('choose every option!!!');
   console.log(arrayOfFood);
+  document.getElementById('form').reset();
+
   event.preventDefault();
 });
 
