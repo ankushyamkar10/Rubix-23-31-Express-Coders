@@ -26,6 +26,9 @@
     </nav>
     <h2 id="d">Ready to be a Smart Retailer!</h2>
     <h4 style="text-align: center;">"Alone we can do so little,together we can do so much"<br>-Helen Keller</h4>
+    <br>
+    <h4 style="text-align: center; color: red;">note:The goods will be scanned during the pickup for the expiry date,any false information about it will lead to instant rejection of the pickup</h4>
+
     <div class="card-bunch">
       <div class="card">
         <div class="container">
@@ -82,7 +85,7 @@
                 id="quantity"
                 onchange="getQuantity()"
                 min="1"
-                placeholder="Enter Quantity"
+                placeholder="Enter quantity"
               />
             </div>
             <div class="form-control">
@@ -92,18 +95,18 @@
                 id="bestbefore"
                 onchange="getbestbefore()"
                 min="5"
-                placeholder="Enter amount..."
+                placeholder="Enter days..."
               />
             </div>
             <button id="btn"><span>Add Product</span></button>    
-            <button id="btn" type="submit"><a href="./thank-retail.html"><span>Finish and Submit</span></a></button>  
+            <button id="btn" type="submit"><span><a href="./thank-retail.html" style="color: white;">Finish and Submit</a></span></button>  
             <!-- before clicking the finish buthon make sure that the localstorage data  -->
            </form>
         </div>
       </div>
       <div class="card">
         <h4>Total Amount</h4>
-        <h1 id="totalamount">$0.00</h1>
+        <h1 id="totalamount">₹0.00</h1>
 
         <h3>List Of Your Products</h3>
         <ul id="list" class="list"></ul>

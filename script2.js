@@ -71,10 +71,12 @@ document.getElementById('btn').addEventListener('click', function (event) {
 function addGoodsDOM() {
   const item = document.createElement('li');
 
-  item.innerHTML = `
+  
       
-         <span> ${val.typeOfFood} "-" ${val.quantity}  "x"   ${val.amount}</span>
-      `;
+  item.innerHTML = `<span>${val.typeOfFood}   x   ${
+    val.quantity
+  } ${getMeasure()} at ₹${val.amount} per ${getMeasure()}</span>`; 
+       
 
   list.appendChild(item);
 }
@@ -85,6 +87,6 @@ function updateLocalStorage() {
 
 function setTotalAmount(val) {
   totalamount = Number(totalamount) + Number(val.amount) * Number(val.quantity);
-  document.getElementById('totalamount').innerText = totalamount;
+  document.getElementById('totalamount').innerText = `₹${totalamount}`;
   console.log(totalamount);
 }
