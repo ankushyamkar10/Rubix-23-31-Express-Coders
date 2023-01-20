@@ -53,6 +53,9 @@ document.getElementById('btn').addEventListener('click', function (event) {
     bestbefore > 0
   ) {
     val = { typeOfFood, amount, quantity, bestbefore };
+
+    
+    price();
     addGoodsDOM();
     setTotalAmount(val);
     arrayOfGoods.push(val);
@@ -88,3 +91,38 @@ function setTotalAmount(val) {
   document.getElementById('totalamount').innerText = `₹${totalamount}`;
   console.log(totalamount);
 }
+
+if(typeOfFood = 'Bakery')
+max_expiry = 5
+else if(typeOfFood = 'Biscuits')
+max_expiry = 240
+if(typeOfFood = 'Cereal')
+max_expiry = 240
+if(typeOfFood = 'Chocolates')
+max_expiry = 240
+if(typeOfFood = 'Dairy ')
+max_expiry = 270
+if(typeOfFood = 'Bakery')
+max_expiry = 5
+if(typeOfFood = 'Bakery')
+max_expiry = 5
+if(typeOfFood = 'Bakery')
+max_expiry = 5
+if(typeOfFood = 'Bakery')
+max_expiry = 5
+function price( typeOfFood, max_expiry, amount, quantity, bestbefore)
+{
+    
+    var amount = amount, factor = 0;
+    if(quantity > 100)
+    factor = quantity / 10000;
+    factor += (max_expiry - bestbefore) / (max_expiry);
+    if(factor > 0.7)
+        factor = 0.7;
+    final_price = amount - (amount * factor);
+    console.log(Math.round(final_price), factor);
+    
+}
+
+
+//price('Amul Butter 100g','Dairy', 270, 55, 120, 200);
