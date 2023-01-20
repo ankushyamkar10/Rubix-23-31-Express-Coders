@@ -64,10 +64,8 @@ document.getElementById('btn').addEventListener('click', function (event) {
     alert('Enter valid values please.');
   }
 //   console.log(arrayOfGoods);
-  typeOfFood = '';
-  quantity = 0;
-  amount = 0;
-  bestbefore = 0;
+  
+  document.getElementById("form").reset();
   event.preventDefault();
 });
 
@@ -88,7 +86,7 @@ document.getElementById("btn1").addEventListener("click", function (event) {
     if(response.ok){
       const jsonResponse = response.json();
     }
-  event.preventDefault();
+  
 });
 
 function addGoodsDOM() {

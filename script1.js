@@ -38,8 +38,15 @@ document.getElementById("btn").addEventListener("click", function (event) {
       list.appendChild(item);
       arrayOfFood.push(val);
     } else alert("please check the checkbox if made less than 18 hrs");
-  } else alert("choose every option!!!");
-  console.log(arrayOfFood);
+  } else
+   {
+    alert("choose every option!!!");
+  }
+ 
+ 
+
+  
+
   event.preventDefault();
 });
 
@@ -60,7 +67,7 @@ document.getElementById("btn1").addEventListener("click", function (event) {
     if(response.ok){
       const jsonResponse = response.json();
     }
-  event.preventDefault();
+  
 });
 
 //Map integration
