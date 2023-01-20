@@ -1,12 +1,7 @@
-// var arrayOfFood = [];
+var arrayOfFood = [];
 var typeOfFood = "";
 var quantity = 0;
 var val = {};
-
-const localStorageArrayOfFood = JSON.parse(localStorage.getItem("arrayOfFood"));
-
-let arrayOfFood =
-  localStorage.getItem("arrayOfFood") !== null ? localStorageArrayOfFood : [];
 
 function storeValue() {
   var select = document.getElementById("mySelect");
@@ -42,25 +37,40 @@ document.getElementById("btn").addEventListener("click", function (event) {
       } ${getMeasure()}</span>`;
       list.appendChild(item);
       arrayOfFood.push(val);
-      updateLocalStorage();
     } else alert("please check the checkbox if made less than 18 hrs");
   } else alert("choose every option!!!");
   console.log(arrayOfFood);
-  document.getElementById("form").reset();
-
   event.preventDefault();
 });
 
-function updateLocalStorage() {
-  localStorage.setItem("arrayOfFood", JSON.stringify(arrayOfFood));
+const getData = () => {
+  
 }
 
+document.getElementById("btn1").addEventListener("click", function (event) {
+  console.log(arrayOfFood)
+  const data = JSON.stringify({data: arrayOfFood});
+    const response = fetch('http://localhost:3000/savef1',{
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: data
+    })
+    if(response.ok){
+      const jsonResponse = response.json();
+    }
+  event.preventDefault();
+});
+
 //Map integration
+
+console.log("hello");
+
 // Note: This example requires that you consent to location sharing when
 // prompted by your browser. If you see the error "The Geolocation service
 // failed.", it means you probably did not give permission for the browser to
 // locate you.
-console.log("hello");
 let map, infoWindow;
 
 function initMap() {

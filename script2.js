@@ -1,4 +1,4 @@
-// var arrayOfGoods = [];
+var arrayOfGoods = [];
 var typeOfFood = '';
 var quantity = 0;
 var amount = 0;
@@ -9,8 +9,8 @@ var select = '';
 
 const localStorageArrays = JSON.parse(localStorage.getItem('arrayOfGoods'));
 
-let arrayOfGoods =
-  localStorage.getItem('arrayOfGoods') !== null ? localStorageArrays : [];
+/*let arrayOfGoods =
+  localStorage.getItem('arrayOfGoods') !== null ? localStorageArrays : [];*/
 
 function storeValue() {
   select = document.getElementById('mySelect');
@@ -61,20 +61,40 @@ document.getElementById('btn').addEventListener('click', function (event) {
     alert('Enter valid values please.');
   }
 //   console.log(arrayOfGoods);
-document.getElementById('form').reset();
+  typeOfFood = '';
+  quantity = 0;
+  amount = 0;
+  bestbefore = 0;
+  event.preventDefault();
+});
 
+const getData = () => {
+  
+}
+
+document.getElementById("btn1").addEventListener("click", function (event) {
+  console.log(arrayOfGoods)
+  const data = JSON.stringify({data: arrayOfGoods});
+    const response = fetch('http://localhost:3000/savef2',{
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: data
+    })
+    if(response.ok){
+      const jsonResponse = response.json();
+    }
   event.preventDefault();
 });
 
 function addGoodsDOM() {
   const item = document.createElement('li');
 
-  
+  item.innerHTML = `
       
-  item.innerHTML = `<span>${val.typeOfFood}   x   ${
-    val.quantity
-  } ${getMeasure()} at ₹${val.amount} per ${getMeasure()}</span>`; 
-       
+         <span> ${val.typeOfFood} "-" ${val.quantity}  "x"   ${val.amount}</span>
+      `;
 
   list.appendChild(item);
 }
@@ -85,6 +105,6 @@ function updateLocalStorage() {
 
 function setTotalAmount(val) {
   totalamount = Number(totalamount) + Number(val.amount) * Number(val.quantity);
-  document.getElementById('totalamount').innerText = `₹${totalamount}`;
+  document.getElementById('totalamount').innerText = totalamount;
   console.log(totalamount);
 }
