@@ -2,195 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <title>Thank you</title>
-    <link rel="stylesheet" href="template.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-
-      #logo {
-        font-family: AMS Aaditya Regular;
-        font-size: 2rem;
-        margin-left: 1.8rem;
-      }
-      nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        z-index: 100;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-        background-color: rgb(248, 192, 52);
-      }
-      .nav-left {
-        display: flex;
-      }
-      .nav-right {
-        display: flex;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-        /* color: white; */
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: row;
-      }
-      .nav-left {
-        display: flex;
-      }
-      .nav-right {
-        display: flex;
-      }
-
-      #home {
-        margin-right: 50px;
-        padding-top: 20px;
-        font-size: 1.5rem;
-      }
-      #about {
-        padding-top: 20px;
-        font-size: 1.5rem;
-        padding-right: 50px;
-      }
-      button {
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 1rem;
-        padding: 1em 2.7em;
-        font-weight: 500;
-        background: #1f2937;
-        color: white;
-        border: none;
-        position: relative;
-        overflow: hidden;
-        border-radius: 150px;
-      }
-      #join {
-        margin: 10px 10px 10px 0;
-        font-size: 1.5rem;
-        padding: 0px 35px;
-      }
-      h1 {
-        text-align: center;
-        font-family: "Poppins";
-        margin-top: 15vh;
-        font-size: 3rem;
-      }
-      .thankyou {
-        width: 25vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        display: block;
-      }
-      footer {
-        background-color: #1f2937;
-        display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 100px;
-        width: 100%;
-      }
-      .footer_element {
-        padding-top: 10vh;
-      }
-      .trademark {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .footer_element > p {
-        max-width: 15vw;
-        padding-top: 1em;
-        text-align: center;
-        color: white;
-        font-family: "Poppins";
-      }
-      footer > div > h2 {
-        font-size: 2rem;
-        text-align: center;
-        font-family: "Poppins";
-        margin: 0;
-        color: white;
-      }
-      .social_media {
-        padding: 5vh;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .socials {
-        width: 3em;
-        margin: 0px 20px;
-      }
-      .data {
-        max-width: 30vw;
-        color: white;
-      }
-      .data > div {
-        padding: 10px 0px;
-        text-align: center;
-        font-family: "Poppins";
-      }
-
-      @media screen and (max-width: 1050px) {
-        .footer {
-          display: grid;
-          grid-template-columns: 50% auto;
-          grid-template-rows: auto auto;
-        }
-        .data {
-          grid-area: 2 / 1 / span 1 / span 2;
-          justify-self: center;
-        }
-        .trademark {
-          align-content: center;
-        }
-        .social {
-          margin-right: 5vw;
-        }
-        .nav-left {
-          display: none;
-        }
-        .nav-right {
-          width: 100%;
-          justify-content: space-evenly;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css" />
+    <title>Donor</title>
   </head>
   <body>
     <nav>
       <div class="nav-left">
-        <a href="#" id="logo">AnnapaUNaQ</a>
+        <a href="#" id="logo">AnnapaUNaaQ</a>
       </div>
       <div class="nav-right">
-        <a href="#" id="home">Home</a>
-        <a href="#" id="about">About Us</a>
-        <button id="join">
+        <a href="index.html" id="home">Home</a>
+        <a href="index.html#whoarewe" id="about">About Us</a>
+        <!-- <button id="join">
           <span class="transition"></span>
           <span class="gradient"></span>
           <span class="label">Join Us</span>
-        </button>
+        </button> -->
       </div>
     </nav>
+    <h2 id="d">Thank you for joining us.</h2>
+    <!-- <h4>"No act of kindness, however small, is ever wasted" - Aesop</h4> -->
     <div class="thank_you">
-      <h1>Thank you for joining us.</h1>
-      <img src="Hello-bro.png" class="thankyou" />
+      <!-- <h1>Thank you for joining us.</h1> -->
+      <img src="Hello-bro.png" class="thankyou" style="width: 25vw;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 100px;
+      display: block;" />
     </div>
+   
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="trademark footer_element">
         <img
@@ -205,20 +50,20 @@
         <h2>Connect with us</h2>
         <div class="social_media">
           <a href="https://www.instagram.com/csi_tsec/"
-            ><img src="instagram-line.svg" alt="insta" class="socials"
+            ><img src="instagram-line.png" alt="insta" class="socials"
           /></a>
           <a href="https://www.facebook.com/csitsecbranch/"
-            ><img src="facebook-circle-fill.svg" alt="insta" class="socials"
+            ><img src="facebook-circle-fill.png" alt="insta" class="socials"
           /></a>
           <a
             href="https://in.linkedin.com/company/csi-tsec?original_referer=https%3A%2F%2Fwww.google.com%2F"
-            ><img src="linkedin-box-fill.svg" alt="insta" class="socials"
+            ><img src="linkedin-box-fill.png" alt="insta" class="socials"
           /></a>
           <a href="https://mobile.twitter.com/csi_tsec">
-            <img src="twitter-line.svg" class="socials" alt="twit"
+            <img src="twitter-line.png" class="socials" alt="twit"
           /></a>
           <a href="https://www.youtube.com/channel/UCGj3zDHE2xAXHZ2v24CxObA"
-            ><img src="youtube-line.svg" class="socials" alt="yt"
+            ><img src="youtube-line.png" class="socials" alt="yt"
           /></a>
         </div>
       </div>
@@ -232,5 +77,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCweqTp4h-6rtfJMXq3cPPZiXBYytDHYso&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
+  <script src="script1.js"></script>
 </html>

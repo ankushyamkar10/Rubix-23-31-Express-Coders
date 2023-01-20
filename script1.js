@@ -1,7 +1,12 @@
-var arrayOfFood = [];
+// var arrayOfFood = [];
 var typeOfFood = "";
 var quantity = 0;
 var val = {};
+
+const localStorageArrayOfFood = JSON.parse(localStorage.getItem("arrayOfFood"));
+
+let arrayOfFood =
+  localStorage.getItem("arrayOfFood") !== null ? localStorageArrayOfFood : [];
 
 function storeValue() {
   var select = document.getElementById("mySelect");
@@ -37,11 +42,18 @@ document.getElementById("btn").addEventListener("click", function (event) {
       } ${getMeasure()}</span>`;
       list.appendChild(item);
       arrayOfFood.push(val);
+      updateLocalStorage();
     } else alert("please check the checkbox if made less than 18 hrs");
   } else alert("choose every option!!!");
   console.log(arrayOfFood);
+  document.getElementById("form").reset();
+
   event.preventDefault();
 });
+
+function updateLocalStorage() {
+  localStorage.setItem("arrayOfFood", JSON.stringify(arrayOfFood));
+}
 
 //Map integration
 // Note: This example requires that you consent to location sharing when

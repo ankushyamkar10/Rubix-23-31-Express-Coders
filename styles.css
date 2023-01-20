@@ -4,7 +4,7 @@
 }
 #logo {
   font-family: AMS Aaditya Regular;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-left: 1.8rem;
 }
 nav {
@@ -41,12 +41,14 @@ a {
 #home {
   margin-right: 50px;
   padding-top: 20px;
-  font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 #about {
   padding-top: 20px;
-  font-size: 1.5rem;
   padding-right: 50px;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 button {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
